@@ -1,0 +1,13 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - ./maven build
+
+#deploy:
+#  stage: deploy
+#  script:
+#    - cp path/to/com.org.x.jar /path/to/deployment/directory
